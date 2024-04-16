@@ -41,28 +41,58 @@ const App = () => {
               <ExpenseTotal />
             </div>
           }
-             {" "}
-          {
-            // ExpenseList component
-            <div className="col-sm">
-              <ExpenseList />
-            </div>
-          }
-             {" "}
-          {
-            //ExpenseItem component
-            <div className="col-sm">
-              <ExpenseItem />
-            </div>
-          }
-             {" "}
-          {
-            // AllocationForm component
-            <div className="col-sm">
-              <AllocationForm />
-            </div>
-          }
         </div>
+        <h2 className="mt-3">Allocation</h2>   {" "}
+        {
+          // ExpenseList component
+          <div className="col-sm">
+            <ExpenseList />
+          </div>
+        }
+        <div class="flex-shrink-0 dropdown mb-5">
+          <a
+            href="#"
+            class="d-block link-body-emphasis text-decoration-none dropdown-toggle show"
+            className="btn btn-primary"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+          >
+            Currency
+          </a>
+          <ul
+            class="dropdown-menu text-small shadow show"
+            data-popper-placement="bottom-end"
+          >
+            <li>
+              <a class="dropdown-item" href="#">
+                £ Pounds
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                $ Dollars
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                € Euro
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                ₹ Ruppee
+              </a>
+            </li>
+          </ul>
+        </div>
+            <h2 className="mt-3">Change Allocation</h2>   {" "}
+        {
+          // AllocationForm component
+          <div className="col-sm">
+            <AllocationForm />
+          </div>
+        }
       </div>
     </AppProvider>
   );
